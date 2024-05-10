@@ -58,7 +58,7 @@ We are currently developing the following features
 ・Behavior when reopening the file  
 ・Behavior when there are multiple particle systems  
 ・Delete any Tracker corresponding to a particle system  
-・Delete only the intended handler when executing **Delete Particle Tracker**  
+・Delete only the intended handler when executing **Delete Particle Tracker and Clear all handler**  
 
 
 
