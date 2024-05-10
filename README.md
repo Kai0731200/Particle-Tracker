@@ -36,21 +36,31 @@ Blender 4.1 or later
 4. Look for any old version of TexTools currently installed and uninstall it.
 5. Hit **Install Addon-on from File...** and Select the zip file.
 6. Enable the Particle Tracker Addon.
-7. In 3D view press N. You'll find new buttons **Particle Tracker pane** tab in the Side Bar.
+7. In 3D view press N. You'll find new buttons **Particle Tracker panel** tab in the Side Bar.
 
 # Usage
+- **Create Particle Tracker** button will create one object **Particle Tracker** corresponding to the top particle system of the active object's slot.
+The name of the object will be **"Particle System name" _Tracker**. Hereafter it is called **Particle Tracker**.
+- The created **Particle Tracker** is an object consisting of (multiple) points, whose number and position correspond to the particles of the particle system.
+- As you move the frame, the **Particle Tracker** moves to the same position as each particle in the particle system and tracks the particles.
 
-- Press the **Create Particle Tracker** button, then if there is an object with a particle system in the scene, it will detect the particle system and create one corresponding object **Particle Tracker**
--The created object **Particle Tracker** is an object consisting of (multiple) points, whose number and position correspond to the particles of the particle system.
-- As you move the frame, **Particle Tracker** will move to the same position as each particle in the particle system and track the particles.
+- **Delete Particle Tracker and Clear All Handlers** deletes the selected object and clears all handlers currently in the scene. Mainly used to delete **Particle Tracker**.
 
-- **Delete Particle Tracker** will delete the created object **Particle Tracker**. This will stop particle tracking.
+-**Clear All Handlers** removes all handlers that are currently in the scene. This stops particle tracking.
 
-Hint:
-- As an internal process, if you press the **Delete Particle Tracker** button, all handlers existing in the scene will be deleted.
+**Hint:**
+- As an internal process, pressing the **Delete Particle Tracker** button will remove all handlers present in the scene.
+We are currently working on this as other handlers will also be removed.
+
+**Hint:**
+- As an internal process, if you press the **Delete Particle Tracker and Clear all handler** button, all handlers existing in the scene will be deleted.
 We are currently working on this as other handlers will also be deleted.
 
 
+
+**Hint:**
+- As an internal process, pressing the **Delete Particle Tracker** button will remove all handlers present in the scene.
+We are currently working on this as other handlers will also be removed.
 # Note
 We are currently developing the following features
 ・Behavior when reopening the file
