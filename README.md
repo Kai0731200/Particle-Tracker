@@ -54,11 +54,11 @@ The name of the object will be **"Particle System name" _Tracker**. Hereafter it
 We are currently working on this as other handlers will also be deleted.
 
 # Note
-We are currently developing the following features
-・Behavior when reopening the file
-・Behavior when there are multiple particle systems
-・Delete any Tracker corresponding to a particle system
-・Delete only the intended handler when executing **Delete Particle Tracker**
+We are currently developing the following features  
+・Behavior when reopening the file  
+・Behavior when there are multiple particle systems  
+・Delete any Tracker corresponding to a particle system  
+・Delete only the intended handler when executing **Delete Particle Tracker**  
 
 
 
