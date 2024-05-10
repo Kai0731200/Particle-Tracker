@@ -49,18 +49,10 @@ The name of the object will be **"Particle System name" _Tracker**. Hereafter it
 - **Clear All Handlers** removes all handlers that are currently in the scene. This stops particle tracking.
 
 **Hint:**
-- As an internal process, pressing the **Delete Particle Tracker** button will remove all handlers present in the scene.
-We are currently working on this as other handlers will also be removed.
-
-**Hint:**
+- The current version only supports the particle system at the top of the object's slot.
 - As an internal process, if you press the **Delete Particle Tracker and Clear all handler** button, all handlers existing in the scene will be deleted.
 We are currently working on this as other handlers will also be deleted.
 
-
-
-**Hint:**
-- As an internal process, pressing the **Delete Particle Tracker** button will remove all handlers present in the scene.
-We are currently working on this as other handlers will also be removed.
 # Note
 We are currently developing the following features
 ・Behavior when reopening the file
