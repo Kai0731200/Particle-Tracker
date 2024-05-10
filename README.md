@@ -6,10 +6,11 @@ The first version was created in 2024.
 
 
 # DEMO
+Create and track points at the particle position
+![スクリーンショット 2024-05-11 012537](https://github.com/Kai0731200/Particle-Tracker/assets/74250530/7ce743ab-1e34-4a9f-8e68-269b26de7471)
 
-Create a point at the particle position (left in the figure)
-Points tracking particles (right side of the figure)
-
+UI
+![スクリーンショット 2024-05-11 013257](https://github.com/Kai0731200/Particle-Tracker/assets/74250530/b7fe6f32-cf4d-4b57-a81a-e24195ae0ce4)
 
 # Features
 
