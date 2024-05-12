@@ -13,7 +13,7 @@
 
 bl_info = {
     "name" : "ParticleTracker",
-    "author" : "Kai Iwamoto",
+    "author" : "Kai0731200",
     "description" : "",
     "blender" : (4, 10, 0),
     "version" : (0, 0, 1),
@@ -32,12 +32,10 @@ else:
 
 import bpy
 
-
-    
-
 classes = (
     ParticleTracker_operator.ParticleTracker_OT_Operator,
     ParticleTracker_operator.ParticleTracker_OT_Delete_Operator,
+    ParticleTracker_operator.ParticleTracker_OT_Clear_Handler,
     ParticleTracker_ui.ParticleTracker_PT_Panel
 )
 
