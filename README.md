@@ -46,7 +46,7 @@ Blender 4.1 or later
 7. In 3D view press N. You'll find new buttons **Particle Tracker panel** tab in the Side Bar.
 
 # Usage
--**Select Particle System to Track** menu.
+- **Select Particle System to Track** menu.
 A list of particle systems owned by the selected object (active object) will be obtained, so select the particle system you want to track from the pull-down menu..
 
 - **Create Particle Tracker** button will create one object **Particle Tracker** .
