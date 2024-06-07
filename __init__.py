@@ -32,20 +32,32 @@ else:
 
 import bpy
 
+# 関数の定義
+# パーティクルシステムの名前一覧を取得する関数
+def get_particle_system_names(self, context):
+    obj = context.object
+    particle_systems = obj.particle_systems
+    particle_system_names = [(ps.name, ps.name, "") for ps in particle_systems]
+    return particle_system_names
+
 classes = (
     ParticleTracker_operator.ParticleTracker_OT_Operator,
-    ParticleTracker_operator.ParticleTracker_OT_Delete_Operator,
-    ParticleTracker_operator.ParticleTracker_OT_Clear_Handler,
     ParticleTracker_ui.ParticleTracker_PT_Panel
 )
 
 def register():
     for c in classes:
         bpy.utils.register_class(c)
-
+    bpy.types.Scene.selected_particle_system_name = bpy.props.EnumProperty(items=[], name="Selected Particle System Name")
+    # パーティクルシステムの名前一覧を更新
+    bpy.types.Scene.selected_particle_system_name = bpy.props.EnumProperty(
+        items=get_particle_system_names,
+        name="Selected Particle System Name"
+    )
+    
 def unregister():
     for c in classes:
         bpy.utils.unregister_class(c)
-    
+    del bpy.types.Scene.selected_particle_system_name
 if __name__ == "__main__":
     register()

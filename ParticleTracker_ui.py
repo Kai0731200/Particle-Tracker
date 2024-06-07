@@ -11,9 +11,9 @@ class ParticleTracker_PT_Panel(bpy.types.Panel):
     def draw(self, context):
         layout = self.layout
         row = layout.row()
-        col = row.column()
-        col.operator("object.particle_tracker_operator", text = "Create Particle Tracker")
-        col.operator("object.particle_tracker_delete_operator", text = "Delete Particle Tracker and Clear all handler")
-        col.operator("object.particle_tracker_clear_handler", text = "Clear all handler")
+        row.label(text="Select Particle System to Track:")
+        row = layout.row()
+        row.prop(context.scene, "selected_particle_system_name", text="", icon='PARTICLE_DATA')
+        row = layout.row()
+        row.operator("object.particle_tracker_operator", text = "Create Particle Tracker")
 
-    
