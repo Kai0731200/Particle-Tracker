@@ -14,8 +14,9 @@ is.
 Create and track points at the particle position  
 ![スクリーンショット 2024-05-11 012537](https://github.com/Kai0731200/Particle-Tracker/assets/74250530/71382067-9e55-4d9a-80c8-a1b3add19413)
 
-DEMO VIDEO 
-https://github.com/Kai0731200/Particle-Tracker/assets/74250530/11b3450a-bf34-44cc-9e9a-ef9e23be5f5f
+DEMO VIDEO  
+![Particle Tracker demo short](https://github.com/Kai0731200/Particle-Tracker/assets/74250530/1172dd16-5c82-4935-a218-49ac88dec5ae)
+
 
 
 
