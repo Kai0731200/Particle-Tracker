@@ -66,7 +66,7 @@ The name of the object will be **"Particle System name" _Tracker**. Hereafter it
 If the particle system name is in Japanese, it will be garbled in the sidebar UI, so please name the particle system in English.
 
 # Explanatory article and Usage example
-- Explanatory article
+- Explanatory article  
   ・https://qiita.com/Kai0731200/items/598f356d54b409dca66e  
   ・https://qiita.com/Kai0731200/items/3893be5570275dc096a7  
 - Usage example
