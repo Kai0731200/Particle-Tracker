@@ -12,7 +12,10 @@ is.
 
 # DEMO
 Create and track points at the particle position  
-[!['Blender add-on “Particle Tracker” demo']('https://github.com/Kai0731200/Particle-Tracker/assets/74250530/5d37a10d-5e80-4ec1-a310-f5570f23b4b6')]('https://youtu.be/1Alczc3hjzY')
+![スクリーンショット 2024-05-11 012537](https://github.com/Kai0731200/Particle-Tracker/assets/74250530/71382067-9e55-4d9a-80c8-a1b3add19413)
+
+DEMO VIDEO 
+https://youtu.be/1Alczc3hjzY
 
 UI  
 ![image](https://github.com/Kai0731200/Particle-Tracker/assets/74250530/109bae0d-84c1-4a99-9ba5-030911e1a848)
