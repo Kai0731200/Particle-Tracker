@@ -70,7 +70,7 @@ If the particle system name is in Japanese, it will be garbled in the sidebar UI
   ・https://qiita.com/Kai0731200/items/598f356d54b409dca66e  
   ・https://qiita.com/Kai0731200/items/3893be5570275dc096a7  
 - Usage example  
-  https://www.youtube.com/watch?v=et39FMHpse0&t=5s  
+  ・https://www.youtube.com/watch?v=et39FMHpse0&t=5s  
 
 # Author
 * Kai0731200
