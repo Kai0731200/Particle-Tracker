@@ -34,10 +34,11 @@ import bpy
 
 # 関数の定義
 # パーティクルシステムの名前一覧を取得する関数
-def get_particle_system_names(self, context):
+def get_particle_system_names(self, context) -> list:
     obj = context.object
     particle_systems = obj.particle_systems
     particle_system_names = [(ps.name, ps.name, "") for ps in particle_systems]
+
     return particle_system_names
 
 classes = (
@@ -54,10 +55,11 @@ def register():
         items=get_particle_system_names,
         name="Selected Particle System Name"
     )
-    
+
 def unregister():
     for c in classes:
         bpy.utils.unregister_class(c)
     del bpy.types.Scene.selected_particle_system_name
+
 if __name__ == "__main__":
     register()

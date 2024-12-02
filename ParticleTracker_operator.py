@@ -1,7 +1,6 @@
 import bpy
-from bpy.types import Operator
 
-def get_particle_system_index_by_name(obj, particle_system_name):
+def get_particle_system_index_by_name(obj: bpy.types.Object, particle_system_name: str) -> int:
             particle_systems = obj.particle_systems
             for i, particle_system in enumerate(particle_systems):
                 if particle_system.name == particle_system_name:
@@ -9,12 +8,12 @@ def get_particle_system_index_by_name(obj, particle_system_name):
             # 見つからない場合は -1 を返す
             return -1
 
-class ParticleTracker_OT_Operator(Operator):
+class ParticleTracker_OT_Operator(bpy.types.Operator):
     bl_idname = "object.particle_tracker_operator"
     bl_label = "Track Particle System"
     bl_description = "Track Particles"
-    
-    def execute(self, context):
+
+    def execute(self, context) -> set:
         # アクティブなオブジェクトを取得
         obj = context.active_object
         # アクティブなオブジェクトが存在するか確認
@@ -66,9 +65,10 @@ class ParticleTracker_OT_Operator(Operator):
                 if particles[i].alive_state!="UNBORN":
                     vertices[i].co = particles[i].location
                     vertices[i].keyframe_insert(data_path = "co",index = -1)
-        
+
         bpy.context.scene.frame_set(frame_start)
         self.report({'INFO'}, "Particle tracking completed successfully.")
+
         return {'FINISHED'}
 
 

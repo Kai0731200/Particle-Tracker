@@ -16,4 +16,3 @@ class ParticleTracker_PT_Panel(bpy.types.Panel):
         row.prop(context.scene, "selected_particle_system_name", text="", icon='PARTICLE_DATA')
         row = layout.row()
         row.operator("object.particle_tracker_operator", text = "Create Particle Tracker")
-
